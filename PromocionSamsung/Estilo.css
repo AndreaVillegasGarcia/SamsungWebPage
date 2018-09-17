@@ -1,0 +1,68 @@
+@font-face {
+         font-family: titulo;
+         src: url("Fuentes/linowrite.ttf");
+      }
+
+@media (max-width:1250px){
+  /*Habria que situar todo con posiciones absolutas*/
+  #encabezamiento{position: absolute}
+  #nav{height:40px; position: absolute}
+}
+
+/*ENCABEZAMIENTO*/
+#encabezamiento{height:180px; 
+                position: relative;
+                background-color: #d1e5f7;
+                border-radius: 10px
+                }
+      
+#titulo{font-family: titulo; font-size: 60pt; text-align: center; color: RGB(7,67,139); float: left; display: inline}
+#logoSamsung{float: right; display: inline; margin-top: 60px; width: 250px}
+#logoUpm{width: 140px; float: right; display: inline; margin: 10px}
+#triangulos{height: 180px; float: left; border-radius: 10px}
+
+/*BARRA AVEGACIÓN*/
+#nav{height:40px; position: relative}
+#barraNav{background-color: RGB(7,67,139)}
+#tablaNav{height: 100%; width: 100%; margin-bottom: 10px}
+.textoBlanco{color:white; text-align: center; font-family: 'Droid Sans', sans-serif; width: 16.67%; border-radius: 8px}
+.textoBlanco:hover{background-color: rgb(66, 119, 183)}
+a{text-decoration: none; color: white}
+
+/*SECCIÓN*/
+#principal{position: relative; text-align: justify}
+.tituloSeccion{margin-left: 10px; font-family: 'Droid Sans', sans-serif; color: RGB(69,157,197); text-shadow:  rgba(0,0,0,0.15)  5px 5px 2px}
+.subtituloSeccion{margin-left: 20px; font-family: 'Droid Sans', sans-serif; color: RGB(21,115,176)}
+.textoPrincipal{margin-left: 10px; text-align: justify; font-family: 'Droid Sans', sans-serif; color: #575656}
+
+/*SECCIÓN PRINCIPAL*/
+#columna{background-color: #d1e5f7; width:250px; height:600px; float:right; margin:20px; border-radius:10px; box-shadow:rgba(0,0,0,0.4) 10px 10px 6px 0}
+#imagenDecor{width: 75%; margin-left: 10px}
+#tituloColumna {margin: 5px; text-align: center; color: RGB(7,67,139); font-family: 'Droid Sans', sans-serif; font-weight: bold; font-size: 18pt}
+.listaColumna{margin-right: 20px;margin-bottom: 20px; text-align: justify; color: RGB(7,67,139); font-family: 'Droid Sans', sans-serif; font-size: 12pt}
+li a{target="_blank"; text-decoration: none; color: #575656}
+
+/*SECCIÓN TEMARIO*/
+#foto{background-color: #d1e5f7; width:600px; float:right; margin:20px; border-radius: 20px}
+#mapFrame{float: left; position: relative; margin-left: 30px}
+#map{width: 400px; height: 400px}
+
+/*SECCIÓN FORMULARIO*/
+fieldset{background-color: #d1e5f7; border-radius: 8px}
+#formulario{margin-left: 200px; margin-top: 10px; margin-right: 250px}
+legend{font-family: 'Droid Sans', sans-serif; color: RGB(7,67,139); font-weight: bold}
+#formulario td{font-family: 'Droid Sans', sans-serif}
+#email:invalid, #edad:invalid, #telef:invalid {border: 1px solid red}
+
+/*SECCIÓN CONTACTO*/
+textarea{margin: 10px}
+
+/*FOOTER*/
+#textoFooter{color: white; font-weight: bold; padding-left: 150px; font-family: 'Droid Sans', sans-serif}
+#footerPrincipal{background-color: #646161; height: 60px;position: relative; bottom: 0px; width:100%; left: 0px}
+#footerTemario{background-color: #646161; height: 60px;position: relative; bottom: -450px; width:100%; left: 0px}     
+#footerFormulario{background-color: #646161; height: 60px;position: relative; bottom: 0px; width:100%; left: 0px}
+      
+
+      
+      

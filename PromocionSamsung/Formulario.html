@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Curso Samsung</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Estilo.css" />
+  </head>
+  <body>
+    <div id="contenedor">
+      
+      <!--ENCABEZAMIENTO-->
+      <header id="encabezamiento">
+        <a href="PaginaPrincipal.html">
+          <img src="Img/triangulos.png" id="triangulos" />
+          <div id="titulo">Curso web <br/>
+          Html5 &amp; Css3
+          </div>
+          <img src="Img/escupm.gif" id="logoUpm" />
+          <img src="Img/techInstitute.png" id="logoSamsung" />
+        </a>
+      </header>
+      
+      <!--BARRA DE NAVEGACIÓN-->
+      <nav id="nav">
+        <table id="tablaNav">
+          <tr id="barraNav">
+            <td class="textoBlanco"><a href="http://www.upm.es/Estudiantes/Estudios_Titulaciones/FormacionEmpleo/PlanesFormacion?id=38b5a79856633510VgnVCM10000009c7648a____&fmt=detail" target="_blank">Pagina UPM</a></td>
+            <td class="textoBlanco"><a href="http://www.samsung.com/es/" target="_blank">Pagina Samsung</a></td>
+            <td class="textoBlanco"><a href="Temario.html">Temario</a></td>
+            <td class="textoBlanco"><a href="Formulario.html">Formulario<br/>inscripcion</a></td>
+            <td class="textoBlanco">Preguntas <br />frecuentes</td>
+            <td class="textoBlanco"><a href="Contacto.html">Contacto</a></td>
+          </tr>
+        </table>
+      </nav>
+      
+      <!--SECCIÓN PRINCIPAL-->
+      <section id="formulario">
+        <h2 class="tituloSeccion">Formulario de inscripción:</h2>
+        <form id='miform' method="get" action="http://salonso.etsisi.upm.es/samsung/procesa.php">
+          <fieldset>
+            <legend>CONVENIO COLABORACIÓN UPM-SAMSUNG</legend>
+            <table>
+              <tr>
+                <td>Título acción formativa</td>
+              </tr>
+              <tr>
+                <td>Código: </td>
+                <td><input type="search" name="codigo" id="codigo" size=31 maxlength=15 readonly="readonly" placeholder="Acción-8"></td>
+              </tr>
+              <tr>
+                <td>Título: </td>
+                <td><input type="search" name="codigo" id="codigo" size=31 maxlength=15 readonly="readonly" placeholder="HTML5 & CSS3"></td>
+              </tr>
+            </table>
+          </fieldset>
+          
+          <fieldset >
+            <legend>FORMULARIO DE DATOS PERSONALES</legend>
+            <table>
+              <tr>
+                <td class="columna1">Nombre:</td>
+                <td><input type="search" name="nombre" id="nombre" size=31 maxlength=15 required="required" placeholder="Campo obligatorio"></td>
+                <td>Sexo: </td>
+                <td>Hombre: <input type="radio" name="sexo" value="H" required="required" > Mujer: <input type="radio" name="sexo" value="M" ></td>
+              </tr>
+              <tr>
+                <td>Apellido 1: </td>
+                <td><input type="search" name="ap1" id="ap1" size=31 maxlength=15 required="required" placeholder="Campo obligatorio"></td>             
+                <td> Fecha de nacimiento: </td>
+                <td><input type="date" name="fech" id="fech" size="31" required="required"></td>
+              </tr>
+              <tr>
+                <td>Apellido 2: </td>
+                <td><input type="search" name="ap2" id="ap2" size=31 maxlength=15 required="required" placeholder="Campo obligatorio"></td>
+                <td>Direccion: </td>
+                <td><input type="search" name="direccion" id="direccion" size=31 maxlength=30 required="required" placeholder="Campo obligatorio"></td>     
+              </tr>
+              <tr>
+                <td>Correo: </td>
+                <td><input type="email" id="email" name="correo" size=31 maxlength=50 required="required" placeholder="Campo obligatorio"></td>
+                <td>Localidad: </td>
+                <td><input type="search" name="localidad" id="localidad" size=31 maxlength=30 required="required" placeholder="Campo obligatorio"></td>
+              </tr>
+              <tr>
+                <td>Edad: </td>
+                <td><input type="search" name='edad' id='edad' maxlength="2" required="required" pattern="[0-9]{1|2}" placeholder="Campo obligatorio"></td>
+                <td> Teléfono: </td>
+                <td><input type="search" name="telef" id="telef" size="31" required="required" placeholder="Campo obligatorio" pattern="^[0-9]{9}"></td>
+              </tr>
+            </table>
+          </fieldset>
+                     
+          <fieldset>
+            <legend>DATOS ACADÉMICOS “FORMACIÓN REGLADA”</legend>
+            <table>
+              <tr>
+                <td>Título Bachiller LOGSE </td>
+                <td> Si: <input type="radio" name="bachiller" value="Si" required="required"> No: <input type="radio" name="bachiller" value="No"></td>
+                <td>Estudios Universitarios </td>
+                <td> Si: <input type="radio" name="universitarios" value="Si" required="required"> No: <input type="radio" name="universitarios" value="No" ></td>
+              </tr>
+              <tr>
+                <td>FP Grado Medio </td>
+                <td> Si: <input type="radio" name="FPmedio" value="Si" required="required"> No: <input type="radio" name="FPmedio" value="No" ></td>
+                <td>Otros estudios (especificar)</td>
+                <td><input type="search" name="otratit" id="otratit" size="30"></td>             
+              </tr>
+              <tr>
+                <td> FP Grado Superior </td>
+                <td> Si: <input type="radio" name="FPsuperior" value="Si" required="required" > No: <input type="radio" name="FPsuperior" value="No" ></td>
+              </tr>
+            </table> 
+          </fieldset>
+          
+          <fieldset>
+            <legend>OTRA FORMACION NO REGLADA ( relacionada con el contexto de la acción formativa)</legend>
+            <table>
+              <tr>
+                <td>Título: </td>
+                <td><input type="search" name="otratit1" id="otratit1" size="30"></td>
+                <td>Duración: </td>
+                <td><input type="search" name="duracion1" id="duracion1" size="30"></td>
+              </tr>
+              <tr>
+                <td>Centro: </td>
+                <td><input type="search" name="centro1" id="centro1" size="30"></td>
+              </tr>
+              <tr>
+                <td>Título: </td>
+                <td><input type="search" name="otratit2" id="otratit2" size="30"></td>
+                <td>Duración: </td>
+                <td><input type="search" name="duracion2" id="duracion2" size="30"></td>
+              </tr>
+              <tr>
+                <td>Centro: </td>
+                <td><input type="search" name="centro2" id="centro2" size="30"></td>
+              </tr>
+            </table>
+          </fieldset>
+          
+          <fieldset>
+            <legend>SITUACIÓN LABORAL</legend>
+            <table>
+              <tr>
+                <td>Desempleado </td>
+                <td> Si: <input type="radio" name="desempleado" value="Si" required="required" > No: <input type="radio" name="desempleador" value="No" ></td>
+                <td> Demandante primer empleo </td>
+                <td> Si: <input type="radio" name="demandante" value="Si" required="required"> No: <input type="radio" name="demandante" value="No" ></td>
+              </tr>
+              <tr>
+                <td>Estudiante</td>
+                <td> Si: <input type="radio" name="estudiante" value="Si" required="required"> No: <input type="radio" name="estudiante" value="No" ></td>
+                <td> Trabaja </td>
+                <td> Si: <input type="radio" name="Trabaja" value="Si"  required="required" > No: <input type="radio" name="Trabaja" value="No" ></td>
+            </table> 
+          </fieldset>
+          
+          <fieldset>
+            <legend>Importante</legend>
+            <table>
+              <tr>
+                <td>Grado de interés </td>
+                <td> Mucho: <input type="radio" name="interes" value="mucho" required="required"> Indiferente: <input type="radio" name="interes" value="interes" ></td>
+                <td>Ninguno: <input type="radio" name="interes" value="ninguno" ></td>
+              </tr>
+              <tr>
+                <td><button type="submit" name="uno">ENVIAR</button></td>
+                <td><button type="reset">BORRAR</button></td>
+              </tr>
+            </table> 
+          </fieldset>
+        </form>
+      </section>
+      
+      <!--PIE DE PAGINA-->
+      <footer id="footerFormulario">
+        <p id="textoFooter"><br/>Universidad politécnica de Madrid &copy; 2017</p>
+      </footer>
+    </div>
+  </body>
+</html>

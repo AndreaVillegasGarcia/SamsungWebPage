@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Curso Samsung</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Estilo.css" />
+  </head>
+  <body>
+    <div id="contenedor">
+      
+      <!--ENCABEZAMIENTO-->
+      <header id="encabezamiento">
+        <a href="PaginaPrincipal.html">
+          <img src="Img/triangulos.png" id="triangulos" />
+          <div id="titulo">Curso web <br/>
+          Html5 &amp; Css3
+          </div>
+          <img src="Img/escupm.gif" id="logoUpm" />
+          <img src="Img/techInstitute.png" id="logoSamsung" />
+        </a>
+      </header>
+      
+      <!--BARRA DE NAVEGACIÓN-->
+      <nav id="nav">
+        <table id="tablaNav">
+          <tr id="barraNav">
+            <td class="textoBlanco"><a href="http://www.upm.es/Estudiantes/Estudios_Titulaciones/FormacionEmpleo/PlanesFormacion?id=38b5a79856633510VgnVCM10000009c7648a____&fmt=detail" target="_blank">Pagina UPM</a></td>
+            <td class="textoBlanco"><a href="http://www.samsung.com/es/" target="_blank">Pagina Samsung</a></td>
+            <td class="textoBlanco"><a href="Temario.html">Temario</a></td>
+            <td class="textoBlanco"><a href="Formulario.html">Formulario<br/>inscripcion</a></td>
+            <td class="textoBlanco">Preguntas <br />frecuentes</td>
+            <td class="textoBlanco"><a href="Contacto.html">Contacto</a></td>
+          </tr>
+        </table>
+      </nav>
+      
+      <!--SECCIÓN PRINCIPAL-->
+      <section id="formulario">
+        <h2 class="tituloSeccion">Formulario de contacto:</h2>
+        <form id='miform' method="get" action="http://salonso.etsisi.upm.es/samsung/procesa.php">
+          <fieldset >
+            <legend>HAZ TU CONSULTA:</legend>
+            <table>
+              <tr>
+                <td class="columna1">Nombre:</td>
+                <td><input type="search" name="nombre" id="nombre" size=31 maxlength=15 required="required" placeholder="Campo obligatorio"></td>
+              </tr>
+              <tr>
+                <td>Correo: </td>
+                <td><input type="email" id="email" name="correo" size=31 maxlength=50 required="required" placeholder="Campo obligatorio"></td>
+              </tr>
+              <tr>
+                <td>Motivo de tu consulta: </td>
+                <td><input type="search" name="localidad" id="localidad" size=50 maxlength=30 required="required" placeholder="Campo obligatorio"></td>
+              </tr>
+              <tr>
+                <td> Teléfono (opcional): </td>
+                <td><input type="search" name="telef" id="telef" size="31" placeholder="Campo obligatorio" pattern="^[0-9]{9}"></td>
+              </tr>
+              <tr>
+                <td> Escribe aquí tu consulta: </td>
+              </tr>
+              <tr>
+                <td colspan=2><textarea cols="70" rows="30" minlength="10"></textarea></td>
+              </tr>
+              <tr>
+                <td><button type="submit" name="uno">ENVIAR</button></td>
+                <td><button type="reset">BORRAR</button></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </section>
+      
+          <!--PIE DE PAGINA-->
+      <footer id="footerFormulario">
+        <p id="textoFooter"><br/>Universidad politécnica de Madrid &copy; 2017</p>
+      </footer>
+    </div>
+  </body>
+</html>

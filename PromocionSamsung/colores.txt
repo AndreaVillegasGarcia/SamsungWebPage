@@ -1,0 +1,5 @@
+Azul1: RGB(21,115,176)
+Azul2: RGB(69,157,197)
+Azul3: RGB(7,67,139)
+
+Hacer una lista con sursos y poner pdfs de cada curso que se oculten cuando no los pinches
